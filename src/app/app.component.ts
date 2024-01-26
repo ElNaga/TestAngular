@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CompaniesService } from './Services/Comapnies.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'AngularTestBeelivio';
+  title = 'TestingAngular';
+
+  get Companies() {
+    console.log(CompaniesService.Companies)
+    return CompaniesService.Companies;
+  }
 }
