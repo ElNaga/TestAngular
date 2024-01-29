@@ -3,12 +3,11 @@ import { SelectedTab } from "../Models/SelectedTabs.model";
 
 @Injectable({ providedIn: 'root' })
 export class TabsService {
-    private tabs: SelectedTab[] = []; // Initialize as an empty array
+    private tabs: SelectedTab[] = [];
 
     constructor() { }
 
     public addTab(tab: SelectedTab): void {
-        // Add a new tab, you might want to include logic to prevent duplicates
         this.tabs.push(tab);
     }
 
@@ -20,5 +19,4 @@ export class TabsService {
         this.tabs = this.tabs.filter(tab => tab.companyId !== companyId);
     }
 
-    // You might also want methods to remove or update tabs
 }

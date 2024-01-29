@@ -15,11 +15,6 @@ export class MainBodyComponent {
 
   mainFileCompany: Company = {} as Company;
 
-  // Tabs = [] as SelectedTab[];
-  // ngOnInit() {
-  //   this.Tabs = this.tabsService.getTabs();
-  // }
-
   get Tabs(): SelectedTab[] {
     return this.tabsService.getTabs();
   }
