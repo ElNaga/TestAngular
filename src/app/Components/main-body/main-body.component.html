@@ -1,0 +1,5 @@
+<div class="main-body">
+    @for(company of Companies.companies; track company) {
+    <app-company-card (CompanySelected)="SelectCompany($event)" [Company]="company"></app-company-card>
+    }
+</div>

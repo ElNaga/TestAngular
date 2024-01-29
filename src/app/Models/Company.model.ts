@@ -15,6 +15,7 @@ export class Department {
 
 export class Company {
   constructor(
+    public id: number,
     public companyName: string,
     public headquarters: string,
     public ceo: string,
